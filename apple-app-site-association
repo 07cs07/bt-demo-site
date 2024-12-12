@@ -1,11 +1,20 @@
 {
   "applinks": {
-    "apps": [],
     "details": [
       {
-        "appID": "6ALF5777EL.com.alchemy.accountkitboilerplate",
-        "paths": ["*"]
+        "appID": "727K56WV67.com.paypal.ppclient-development",
+        "paths": [
+          "*",
+          "/",
+          "/*",
+          "/braintree-payments/*"
+        ]
       }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "727K56WV67.com.paypal.ppclient-development"
     ]
   }
 }
