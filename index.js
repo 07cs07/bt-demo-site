@@ -3,7 +3,26 @@ var server = express();
 
 server.get('/.well-known/apple-app-site-association', function(request, response) {
   console.log(__dirname);
-  response.sendFile('/home/ec2-user/apple-app-site-association/apple-app-site-association');
+  response.send({
+    "applinks": {
+      "details": [
+        {
+          "appID": "727K56WV67.com.paypal.ppclient-development",
+          "paths": [
+            "*",
+            "/",
+            "/*",
+            "/braintree-payments/*"
+          ]
+        }
+      ]
+    },
+    "webcredentials": {
+      "apps": [
+        "727K56WV67.com.paypal.ppclient-development"
+      ]
+    }
+  });
 });
 
 server.get('/', function(request, response) {
