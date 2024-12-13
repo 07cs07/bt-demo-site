@@ -7,7 +7,7 @@ server.get('/.well-known/apple-app-site-association', function(request, response
     "applinks": {
       "details": [
         {
-          "appID": "727K56WV67.com.paypal.ppclient-development",
+          "appID": "7JMU3EK8QX.com.paypal.ppclient-development",
           "paths": [
             "*",
             "/",
@@ -19,7 +19,7 @@ server.get('/.well-known/apple-app-site-association', function(request, response
     },
     "webcredentials": {
       "apps": [
-        "727K56WV67.com.paypal.ppclient-development"
+        "7JMU3EK8QX.com.paypal.ppclient-development"
       ]
     }
   });
